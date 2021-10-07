@@ -1,0 +1,82 @@
+.hero {
+  @apply col-span-4 grid grid-cols-3 gap-x-6;
+}
+.hero-movie {
+  @apply col-span-2 mb-7 overflow-hidden;
+  background: rgba(31, 36, 51, 0.8);
+  border-radius: var(--main-radius);
+}
+
+.hero .hero-movie .swiper-container {
+  @apply relative h-full;
+}
+
+.hero-movie .poster {
+  @apply w-28 absolute bottom-10 left-10;
+  box-shadow: 0 0 15px -8px rgb(110, 110, 110);
+  border-radius: var(--main-radius);
+}
+.hero .movie-list {
+  @apply col-span-1;
+}
+.hero .movie-list .swiper-container .swiper-wrapper {
+  height: 500px;
+}
+.swiper-container-vertical > .swiper-pagination-progressbar {
+  @apply left-auto right-0 !important;
+}
+.swiper-container-vertical > .swiper-pagination-progressbar > .swiper-pagination-progressbar-fill {
+  background: linear-gradient(150.83deg, #f8dc68 3.7%, #2ecbd1 95.17%);
+}
+
+.hero .movie-list .movie-wrapper {
+  @apply flex justify-between mb-3 py-2 pl-6 pr-5 cursor-pointer text-xs !important;
+  background: linear-gradient(180deg, rgba(31, 36, 51, 0.24) 0%, rgba(31, 36, 51, 0.8) 72.4%);
+  transition: all ease 0.2s;
+  border-radius: var(--main-radius);
+}
+
+.hero .movie-list .movie-wrapper:hover {
+  @apply shadow-xl transform scale-95;
+}
+.hero .movie-wrapper img {
+  @apply w-14 rounded-md mr-3;
+}
+
+.hero .movie-wrapper .movie-info {
+  @apply w-3/4 text-white flex flex-wrap items-stretch;
+}
+.hero .movie-wrapper .movie-info .ant-tag {
+  @apply px-1 mb-1 text-yellow-300 border-yellow-300;
+  background: #f8db6873;
+  font-size: 10px;
+}
+
+.hero .movie-wrapper .movie-info .ant-rate {
+  @apply text-xs;
+}
+
+.movie-list .swiper-wrapper .swiper-slide.movie-wrapper.swiper-slide-thumb-active::before,
+.movie-list .swiper-wrapper .swiper-slide.swiper-slide-active.movie-wrapper::before {
+  @apply text-green-400 absolute top-12 left-2;
+  content: " \25CF";
+}
+
+.hero .hero-movie .swiper-container .swiper-button-prev,
+.hero .hero-movie .swiper-container .swiper-button-next {
+  @apply cursor-pointer text-2xl text-gray-200 bg-gray-500 opacity-20 absolute h-9 !important;
+}
+.hero .hero-movie .swiper-container .swiper-button-prev {
+  @apply top-1/3 left-0 rounded-r-md !important;
+}
+.hero .hero-movie .swiper-container .swiper-button-prev::after,
+.hero .hero-movie .swiper-container .swiper-button-next::after {
+  @apply text-base font-semibold;
+}
+.hero .hero-movie .swiper-container .swiper-button-next {
+  @apply top-1/3 right-0 rounded-l-md !important;
+}
+
+.movie-title {
+  @apply w-60 mx-auto mt-8 text-xl font-semibold text-green-300;
+}

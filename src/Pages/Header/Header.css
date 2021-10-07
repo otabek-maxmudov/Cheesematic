@@ -1,0 +1,73 @@
+.logo {
+  @apply h-10 col-span-1 my-auto;
+}
+
+.logo img {
+  @apply w-60;
+}
+
+.types {
+  @apply h-10 text-right col-span-1 my-auto;
+}
+
+.search-input_wrapper {
+  @apply h-10 col-span-3 my-auto relative;
+}
+.search-input_wrapper > .ant-select.genres-select > .ant-select-selector {
+  @apply w-36 rounded-l-full text-white border-none shadow-none !important;
+  background-color: var(--bg-color);
+}
+
+.ant-select-arrow > .anticon.anticon-down.ant-select-suffix {
+  @apply text-white;
+}
+
+.ant-select-item.ant-select-item-option.ant-select-item-option-active,
+.ant-select-item.ant-select-item-option {
+  @apply min-h-0 py-px text-white;
+  background-color: var(--bg-color-light);
+}
+
+.ant-select-item.ant-select-item-option.ant-select-item-option-active {
+  background-color: var(--bg-color);
+}
+
+.ant-select-dropdown.ant-select-dropdown-placement-bottomLeft {
+  background-color: var(--bg-color-light);
+}
+
+.search-input_wrapper {
+  @apply w-96 flex justify-between items-center rounded-full;
+  background-color: var(--bg-color-light);
+  padding: 3px 1rem 3px 3px;
+}
+
+.search-input {
+  @apply border border-transparent focus:outline-none bg-transparent w-5/6 ml-2;
+  color: var(--text-color);
+}
+
+.types .ant-menu,
+.ant-menu-horizontal {
+  @apply text-base font-semibold border-b-0;
+  background: none;
+  color: var(--text-color);
+}
+.types .ant-menu .ant-menu-item.ant-menu-item-active.ant-menu-item-selected,
+.types .ant-menu .ant-menu-item.ant-menu-item-selected,
+.types .ant-menu .ant-menu-item:active,
+.types .ant-menu .ant-menu-item:focus {
+  color: var(--text-color-hover);
+  border-bottom: none;
+}
+
+.types .ant-menu.ant-menu-horizontal > .ant-menu-item:hover,
+.types .ant-menu.ant-menu-horizontal > .ant-menu-item::after,
+.types .ant-menu.ant-menu-horizontal > .ant-menu-item-active::after,
+.types .ant-menu.ant-menu-horizontal > .ant-menu-item-active:hover:after {
+  @apply text-white border-b-0;
+}
+.types .ant-menu.ant-menu-horizontal > .ant-menu-item.ant-menu-item-selected::after {
+  @apply border-b-0 absolute -bottom-5;
+  content: url("../../Images/active-img.png");
+}

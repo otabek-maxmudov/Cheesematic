@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #8790ab;
+  --title-color: #2ecbd1;
+  --text-color-hover: #dbe0f0;
+  --bg-color: #161a27;
+  --bg-color-light: #1f2433;
+  --main-radius: 8px;
+}
+
+body,
+#root {
+  background-color: var(--bg-color);
+}
+::-webkit-scrollbar {
+  @apply w-2;
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-xl !important;
+  background: linear-gradient(150.83deg, #f8dc68 3.7%, #2ecbd1 95.17%);
+}
+
