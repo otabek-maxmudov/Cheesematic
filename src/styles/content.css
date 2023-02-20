@@ -1,0 +1,12 @@
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  @apply text-white-main;
+}
+.ant-tabs .ant-tabs-tab .ant-tabs-tab-btn {
+  @apply pb-2 text-blue-tint text-base tracking-wide;
+}
+.ant-tabs > .ant-tabs-nav .ant-tabs-ink-bar {
+  @apply h-4 bg-repeat-x bg-transparent bg-[url("../meltedcheese.svg")];
+}
+.ant-tabs .ant-tabs-content-holder {
+  @apply w-full absolute;
+}/*# sourceMappingURL=content.css.map */

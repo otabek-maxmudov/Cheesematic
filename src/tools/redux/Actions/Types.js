@@ -1,0 +1,10 @@
+export const SET_MOVIE_LIST = "SET_MOVIE_LIST";
+export const SET_SHOWS_LIST = "SET_SHOWS_LIST";
+export const SET_TYPE = "SET_TYPE";
+export const SET_SELECTED_MOVIE = "SET_SELECTED_MOVIE";
+export const SET_MOVIE_ID = "SET_MOVIE_ID";
+export const SET_CATEGORY = "SET_CATEGORY";
+export const SET_LOADING = "SET_LOADING";
+export const SET_VIEW_ALL = "SET_VIEW_ALL";
+export const SET_GENRES_LIST = "SET_GENRES_LIST";
+export const SET_SEARCHED_MOVIE = "SET_SEARCHED_MOVIE";

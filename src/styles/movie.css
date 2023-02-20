@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.swiper-container {
+  @apply col-span-3 bg-blue-gray bg-opacity-40 rounded-lg overflow-hidden;
+}
+.swiper-container .swiper {
+  @apply overflow-visible;
+}
+.swiper-container :where(.swiper).selected-movie {
+  @apply h-98;
+}
+.swiper-container :where(.swiper).selected-movie :where(.css-dev-only-do-not-override-j0nf2s).ant-skeleton.ant-skeleton-element .ant-skeleton-image {
+  @apply border;
+}
+.swiper-container :where(.swiper).selected-movie .poster {
+  @apply w-28 absolute -bottom-20 left-12 rounded-md drop-shadow-2xl;
+}
+
+.swiper.movie-list {
+  @apply w-full;
+}
+.swiper.movie-list .swiper-wrapper {
+  @apply flex flex-wrap gap-2 flex-col justify-between z-0;
+}
+.swiper.movie-list .swiper-wrapper:hover .swiper-slide {
+  @apply opacity-50;
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide {
+  @apply w-full h-28 flex justify-between items-center py-2 bg-gradient-to-b from-[#1F24333D] via-[#1F2433CC] to-[#1F2433CC] rounded-md transition-all duration-200 !important;
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide:hover {
+  @apply cursor-pointer transform scale-90 opacity-100;
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide:hover img {
+  @apply transform scale-125 shadow-lg shadow-blue-dark;
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide:hover::before {
+  @apply text-xs;
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide::before {
+  @apply w-6 content-[""];
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide.swiper-slide-thumb-active::before {
+  @apply w-6 content-["●"] text-turquoise-main flex justify-center;
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide img {
+  @apply w-16 object-contain object-left transition-all duration-200 z-30 !important;
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide .movie-info {
+  @apply grid grid-flow-row w-2/3 h-full ml-4;
+}
+.swiper.movie-list .swiper-wrapper .swiper-slide .movie-info .ant-rate .ant-rate-star-zero svg,
+.swiper.movie-list .swiper-wrapper .swiper-slide .movie-info .ant-rate .ant-rate-star-half .ant-rate-star-second svg {
+  @apply text-blue-gray;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-disabled {
+  @apply cursor-pointer text-gray-200 bg-primary opacity-60 !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after,
+.swiper-button-disabled::after {
+  @apply text-base !important;
+}
+
+.swiper-button-next {
+  @apply right-0 rounded-l-md !important;
+}
+
+.swiper-button-prev {
+  @apply left-0 rounded-r-md !important;
+}
+
+.swiper-button-disabled {
+  @apply opacity-20 !important;
+}/*# sourceMappingURL=movie.css.map */

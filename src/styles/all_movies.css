@@ -1,0 +1,29 @@
+.all-movie-header {
+  @apply flex justify-between pb-4;
+}
+
+.all-movies {
+  @apply max-h-119 grid grid-cols-5 gap-x-6 gap-y-4 pr-4 overflow-auto;
+}
+.all-movies::-webkit-scrollbar-track {
+  @apply bg-blue-dark rounded-full;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.all-movies::-webkit-scrollbar {
+  @apply w-2 rounded-full bg-blue-dark;
+}
+.all-movies::-webkit-scrollbar-thumb {
+  @apply rounded-xl bg-gradient-to-b from-blue-dark via-yellow-main to-blue-dark;
+}
+.all-movies .movie-card-wrapper .movie-card {
+  @apply bg-blue-dark rounded-lg shadow-2xl shadow-blue-dark overflow-hidden relative;
+}
+.all-movies .movie-card-wrapper .movie-card img {
+  @apply transition-transform duration-300;
+}
+.all-movies .movie-card-wrapper .movie-card:hover img {
+  @apply transform scale-110;
+}
+.all-movies .movie-card-wrapper .movie-card .badge {
+  @apply text-sm self-end bg-yellow-main text-blue-dark font-bold tracking-tight rounded-br px-2 absolute top-0 left-0;
+}/*# sourceMappingURL=all_movies.css.map */

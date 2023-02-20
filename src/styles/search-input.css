@@ -1,0 +1,46 @@
+.ant-input-group {
+  @apply h-8 border-2 border-blue-gray border-opacity-40 rounded-3xl overflow-hidden;
+}
+.ant-input-group .ant-input-group-addon:first-child {
+  @apply border-none;
+}
+.ant-input-group .ant-input-group-addon:last-child {
+  @apply bg-blue-gray bg-opacity-40 border-none p-0;
+}
+.ant-input-group .ant-input-group-addon:last-child .ant-btn {
+  @apply border-none;
+}
+.ant-input-group .ant-input-group-addon:last-child .ant-btn .ant-wave {
+  @apply hidden;
+}
+.ant-input-group .ant-input-group-addon:last-child .ant-btn .anticon > svg {
+  @apply bg-blue-gray bg-opacity-40 text-yellow-main;
+}
+.ant-input-group .ant-input-group-addon .ant-select .ant-select-selector {
+  @apply text-blue-tint;
+}
+.ant-input-group .ant-select-arrow > svg {
+  @apply fill-blue-tint;
+}
+.ant-input-group .ant-input-affix-wrapper {
+  @apply bg-blue-gray bg-opacity-40 h-full;
+}
+.ant-input-group .ant-input-affix-wrapper .ant-input {
+  @apply text-blue-tint;
+}
+.ant-input-group .ant-input-affix-wrapper .ant-input-suffix {
+  @apply bg-blue-gray bg-opacity-0 border-none;
+}
+.ant-input-group .ant-input-affix-wrapper .ant-input-clear-icon > svg {
+  @apply bg-blue-gray bg-opacity-40 text-yellow-main;
+}
+
+.genres-select-popup {
+  @apply bg-blue-dark drop-shadow-xl;
+}
+.genres-select-popup .ant-select-item {
+  @apply text-white-main;
+}
+.genres-select-popup .ant-select-item:hover {
+  @apply bg-blue-gray bg-opacity-40;
+}/*# sourceMappingURL=search-input.css.map */

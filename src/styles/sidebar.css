@@ -1,0 +1,31 @@
+.sidebar {
+  @apply h-full rounded-lg;
+  background: linear-gradient(180deg, rgba(248, 220, 104, 0.5019607843) -100%, #1f2433 85.5%);
+}
+.sidebar .ant-menu-vertical .ant-menu-item {
+  @apply bg-transparent flex items-center text-blue-tint font-medium tracking-wider py-6;
+}
+.sidebar .ant-menu-vertical .ant-menu-item.ant-menu-item-selected {
+  @apply text-white-main bg-primary w-full rounded-tr-none rounded-br-none;
+}
+.sidebar .ant-menu-vertical .ant-menu-item.ant-menu-item-selected .ant-menu-item-icon {
+  @apply fill-primary bg-yellow-main;
+}
+.sidebar .ant-menu-vertical .ant-menu-item .ant-menu-item-icon {
+  @apply w-6 h-6 p-1 bg-blue-gray fill-blue-tint rounded-lg;
+}
+.sidebar .ant-menu-vertical .ant-menu-item .ant-menu-item-icon + span {
+  @apply bg-transparent;
+}
+.sidebar :where(.css-dev-only-do-not-override-j0nf2s).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected) {
+  @apply w-full rounded-tr-none rounded-br-none;
+}
+.sidebar :where(.css-dev-only-do-not-override-j0nf2s).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active {
+  @apply bg-transparent;
+}
+.sidebar :where(.css-dev-only-do-not-override-j0nf2s).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover {
+  @apply bg-transparent text-yellow-main;
+}
+.sidebar :where(.css-dev-only-do-not-override-j0nf2s).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover .ant-menu-item-icon {
+  @apply fill-yellow-main;
+}/*# sourceMappingURL=sidebar.css.map */
